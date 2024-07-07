@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <link rel="icon" href="img/Neri-Logo1.png" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+  />
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+<body style="padding-top: 20px;">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light mb-5 bg-body-tertiary fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-2" href="#" onclick="scrollToHome()">
+        <h3 style="color: rgb(20, 4, 29);
+                  padding: 10px;
+                  border: 2px solid rgb(20, 4, 29);
+                  background-color: transparent;
+                  display: inline-block;
+                  height: 50px;
+                  width: 200px;
+                  margin: 0; /* Remove default margin */
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  ">EDUCTOUR</h3>
+      </a>
+
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="d-flex align-items-center">
+        <a data-mdb-ripple-init class="btn btn-link px-3 me-2 text-dark" href="#about-content" onclick="scrollToAbout()">Speakers</a>
+        <a data-mdb-ripple-init class="btn btn-link px-3 me-2 text-dark" href="#skills-content" onclick="scrollToSkills()">Schedules</a>
+        <a data-mdb-ripple-init class="btn btn-link px-3 me-2 text-dark" href="#project-content" role="button">Venue</a>
+        <a data-mdb-ripple-init class="btn btn-dark px-3" href="https://github.com/mgkelly131" role="button"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section id="banner">
+    <div >
+        <h2>Bachelor of Science in Computer Science</h2>
+        <p id="btitle">EDUCATIONAL TOUR 2024</p>
+    </div>
+
+  </section>
+  
+
+  <div class="container-about mt-5" id="about-content">
+   
+  </div>
+
+  <div class="space" style="height: 150px; width:150px; color:#1a1919;"></div>
+
+  <div class="container mt-5" id="skills-content">
+  
+    </div>
+
+  <div class="space" style="height: 250px;  color:#1a1919;"></div>
+
+
+
+      <footer class="bg-body-tertiary text-center">
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://www.facebook.com/Johnneri.99"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/shawtylvs/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/in/johnneri-garcia131/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+    
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          
+        </div>
+
+      </footer>
+<!-- Footer -->
+
+<script type="text/javascript" src="js/mdb.umd.min.js"></script>
+
+
+</body>
+</html>
+
+
+
+<style>
+  .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1a1919;
+    font-family: "Roboto", sans-serif;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover; /* ensures the image covers the entire background */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+  }
+
+  section#banner{
+    display: flex;
+    align-items: center;
+    height: calc(100vh);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(14, 13, 13, 0.356),rgba(11, 11, 11, 0.411)),url('./img/bell-church.jpg');
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+@media screen and (min-width: 768px){
+
+  section#banner{
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  font-size: 5em;
+  }
+  .fb{
+      flex-direction: row;
+  }
+}
+  
+</style>
